@@ -32,6 +32,8 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
 
 ## BONUS
 
+<br>
+
 **BONUS 1:**
 Aggiungere il ciclo infinito del carosello. Ovvero se è attiva la prima immagine e l'utente clicca la freccia per andare all’immagine precedente, dovrà comparre l'ultima e viceversa!
 
@@ -39,3 +41,16 @@ Aggiungere il ciclo infinito del carosello. Ovvero se è attiva la prima immagin
 
 - Qunado l'indice corrente arriva al minimo/massimo deve diventare uguale all'opposto.
 - e rimuovo la classe precedente.
+
+---
+
+**BONUS 2:**
+Aggiungere la visualizzazione di tutte le thumbnails in basso o sulla destra dell’immagine grande attiva, (usate lo screen in allegato come ispirazione). Tutte le miniature avranno un layer di opacità scura, tranne quella corrispondente all’immagine attiva, che invece avrà un bordo colorato.
+
+Al click delle frecce, oltre al cambio di immagine attiva, gestire il cambio di miniatura attiva.
+
+## **Step Bonus 2**
+
+- Creare l'HTML e CSS statico con le classi dedicate.
+- Andre a prendere l'elemento creato dal DOM.
+- Sostituire la classe al click di uno dei due bottoni.
