@@ -36,17 +36,27 @@ images[currentIndex].classList.add("active");
 //# Tenere in ascolto i bottoni
 //! PREV
 btnPrev.addEventListener("click", function () {
-  if (currentIndex < 1) return;
-  images[currentIndex].classList.remove("active");
-  currentIndex--;
-  images[currentIndex].classList.add("active");
+  if (currentIndex < 1) {
+    images[currentIndex].classList.remove("active");
+    currentIndex = images.length - 1;
+    images[currentIndex].classList.add("active");
+  } else {
+    console.log(images.length, currentIndex);
+    images[currentIndex].classList.remove("active");
+    currentIndex--;
+    images[currentIndex].classList.add("active");
+  }
 });
 
 //! NEXT
 btnNext.addEventListener("click", function () {
-  if (currentIndex === images.length - 1) return;
-
-  images[currentIndex].classList.remove("active");
-  currentIndex++;
-  images[currentIndex].classList.add("active");
+  if (currentIndex === images.length - 1) {
+    images[currentIndex].classList.remove("active");
+    currentIndex = 0;
+    images[currentIndex].classList.add("active");
+  } else {
+    images[currentIndex].classList.remove("active");
+    currentIndex++;
+    images[currentIndex].classList.add("active");
+  }
 });

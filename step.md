@@ -37,4 +37,5 @@ Aggiungere il ciclo infinito del carosello. Ovvero se è attiva la prima immagin
 
 ## **Step Bonus 1**
 
--
+- Qunado l'indice corrente arriva al minimo/massimo deve diventare uguale all'opposto.
+- e rimuovo la classe precedente.
