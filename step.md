@@ -29,3 +29,12 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
   - Aggiungo la classe con l'indice incrementato.
 
 ---
+
+## BONUS
+
+**BONUS 1:**
+Aggiungere il ciclo infinito del carosello. Ovvero se è attiva la prima immagine e l'utente clicca la freccia per andare all’immagine precedente, dovrà comparre l'ultima e viceversa!
+
+## **Step Bonus 1**
+
+-
