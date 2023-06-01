@@ -1,28 +1,28 @@
-#carousel{
+#carousel {
   height: 600px;
-  width: 60vw;
-  margin: 20vh auto;
+  margin: 20vh 0;
   position: relative;
+  padding: 0;
 }
 
-#gallery{
+#gallery {
   height: 100%;
 }
 
-#gallery img{
+#gallery img {
   height: 100%;
-  width: 60vw;
+  width: 100%;
   object-fit: cover;
   border-radius: 30px;
   display: none;
 }
 
-#gallery img.active{
+#gallery img.active {
   display: block;
   user-select: none;
 }
 
-#carousel .fa-solid{
+#carousel .fa-solid {
   position: absolute;
   font-size: 3rem;
   left: 50%;
@@ -30,11 +30,28 @@
   cursor: pointer;
 }
 
-#btn-prev{
+#btn-prev {
   top: -4rem;
 }
 
-#btn-next{
+#btn-next {
   bottom: -4rem;
 }
 
+#thumbnails {
+  width: 20vw;
+  height: 600px;
+  padding: 0;
+  position: relative;
+}
+
+#thumbnails img {
+  height: 120px;
+  width: 100%;
+  object-fit: center;
+}
+
+#thumbnails .layer{
+opacity: 0.4;
+border: 10px solid black;
+}

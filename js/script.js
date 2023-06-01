@@ -27,34 +27,40 @@ for (let i = 0; i < immages.length; i++) {
 }
 
 //# LOGICA
-const images = document.querySelectorAll("#carousel img");
+const mainImages = document.querySelectorAll("#carousel img");
+const imagesAside = document.querySelectorAll("#thumbnails img");
 let currentIndex = 0;
 
-//* Inserisco nella prima immagina la classe active
-images[currentIndex].classList.add("active");
+//* Inserisco nella prima immagina la classe active e layer
+mainImages[currentIndex].classList.add("active");
+imagesAside[currentIndex].classList.add("layer");
 
 //# Tenere in ascolto i bottoni
 //! PREV
 btnPrev.addEventListener("click", function () {
-  images[currentIndex].classList.remove("active");
+  mainImages[currentIndex].classList.remove("active");
+  imagesAside[currentIndex].classList.remove("layer");
   if (currentIndex === 0) {
-    currentIndex = images.length - 1;
+    currentIndex = mainImages.length - 1;
   } else {
     currentIndex--;
   }
-  images[currentIndex].classList.add("active");
+  mainImages[currentIndex].classList.add("active");
+  imagesAside[currentIndex].classList.add("layer");
   console.log(currentIndex);
 });
 
 //! NEXT
 btnNext.addEventListener("click", function () {
-  images[currentIndex].classList.remove("active");
-  if (currentIndex === images.length - 1) {
+  mainImages[currentIndex].classList.remove("active");
+  imagesAside[currentIndex].classList.remove("layer");
+  if (currentIndex === mainImages.length - 1) {
     currentIndex = 0;
   } else {
     currentIndex++;
   }
-  images[currentIndex].classList.add("active");
+  mainImages[currentIndex].classList.add("active");
+  imagesAside[currentIndex].classList.add("layer");
 
   console.log(currentIndex);
 });
