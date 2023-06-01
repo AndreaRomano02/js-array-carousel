@@ -36,27 +36,25 @@ images[currentIndex].classList.add("active");
 //# Tenere in ascolto i bottoni
 //! PREV
 btnPrev.addEventListener("click", function () {
-  if (currentIndex < 1) {
-    images[currentIndex].classList.remove("active");
+  images[currentIndex].classList.remove("active");
+  if (currentIndex === 0) {
     currentIndex = images.length - 1;
-    images[currentIndex].classList.add("active");
   } else {
-    console.log(images.length, currentIndex);
-    images[currentIndex].classList.remove("active");
     currentIndex--;
-    images[currentIndex].classList.add("active");
   }
+  images[currentIndex].classList.add("active");
+  console.log(currentIndex);
 });
 
 //! NEXT
 btnNext.addEventListener("click", function () {
+  images[currentIndex].classList.remove("active");
   if (currentIndex === images.length - 1) {
-    images[currentIndex].classList.remove("active");
     currentIndex = 0;
-    images[currentIndex].classList.add("active");
   } else {
-    images[currentIndex].classList.remove("active");
     currentIndex++;
-    images[currentIndex].classList.add("active");
   }
+  images[currentIndex].classList.add("active");
+
+  console.log(currentIndex);
 });
