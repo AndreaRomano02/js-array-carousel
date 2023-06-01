@@ -1,0 +1,39 @@
+#carousel{
+  height: 600px;
+  width: 60vw;
+  margin: 20vh auto;
+  position: relative;
+}
+
+#gallery{
+  height: 100%;
+}
+
+#gallery img{
+  height: 100%;
+  width: 60vw;
+  object-fit: cover;
+  border-radius: 30px;
+  display: none;
+}
+
+#gallery img.active{
+  display: block;
+}
+
+#carousel .fa-solid{
+  position: absolute;
+  font-size: 3rem;
+  left: 50%;
+  translate: -50%;
+  cursor: pointer;
+}
+
+#carousel .fa-circle-arrow-up{
+  top: -4rem;
+}
+
+#carousel .fa-circle-arrow-down{
+  bottom: -4rem;
+}
+
