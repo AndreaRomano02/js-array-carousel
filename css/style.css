@@ -19,6 +19,7 @@
 
 #gallery img.active{
   display: block;
+  user-select: none;
 }
 
 #carousel .fa-solid{
@@ -29,11 +30,11 @@
   cursor: pointer;
 }
 
-#carousel .fa-circle-arrow-up{
+#btn-prev{
   top: -4rem;
 }
 
-#carousel .fa-circle-arrow-down{
+#btn-next{
   bottom: -4rem;
 }
 

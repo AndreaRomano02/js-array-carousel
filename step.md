@@ -8,17 +8,24 @@ Dato un array contenente una lista di cinque immagini, creare un carosello come 
 - Recupero tutti gli elementi necessari.
 - Creo l'array con le immagini da inserire nel DOM.
 - **FINO A CHE** Non ho inserito tutte le immagini nell'array.
-  - Creo il template literal per aggiungere ogni singola immagine nell'array.
-- Aggiungo il template che ho creato nel ciclo al DOM.
+
+  - Creo gli elementi da inserire nel DOM (all'interno di "gallery")
+  - Aggiungo gli elementii che ho creato al DOM.
+
+- Prendo tutti gli elementi dal DOM che ho creato precedentemente.
+- Dichiaro l'indice corrente e lo inizializzo per prendere il primo elemento
+  dell'Array.
+- Aggiungo al primo elemento la classe "Active".
+
 - **ATTENDO** il click della freccia avanti.
-  **SCORRO** l'array
 
   - Rimuovo la classe con l'indice corrente.
-  - Incremento una indice.
+  - Incremento l'indice corrente.
   - Aggiungo la classe con l'indice incrementato.
 
 - **ATTENDO** il click della freccia indietro.
-  **SCORRO** l'array
   - Rimuovo la classe con l'indice corrente.
   - Decremento una indice.
   - Aggiungo la classe con l'indice incrementato.
+
+---
