@@ -3,6 +3,7 @@ console.log("JS OK");
 //# PRELIMNARI
 
 const galleryElement = document.getElementById("gallery");
+const thumbnailGallery = document.getElementById("thumbnails");
 const btnPrev = document.getElementById("btn-prev");
 const btnNext = document.getElementById("btn-next");
 
@@ -24,6 +25,9 @@ for (let i = 0; i < immages.length; i++) {
   imgElement.src = immages[i];
   imgElement.alt = "Landscape " + (i + 1);
   galleryElement.appendChild(imgElement);
+
+  const thumbnails = imgElement.cloneNode();
+  thumbnailGallery.appendChild(thumbnails);
 }
 
 //# LOGICA
